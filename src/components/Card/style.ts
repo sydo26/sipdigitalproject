@@ -8,8 +8,7 @@ const DIV = styled.div`
   margin: 0 auto;
   border-radius: 10px;
   flex-wrap: wrap;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
-
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   /* 1520px */
   @media screen and (min-width: 1520px) {
     & {
@@ -45,7 +44,7 @@ const BODY = styled.div`
   width: 100%;
   heigth: auto;
   margin: 20px 0;
-  padding: 0 20px;
+  padding: 0 10%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;

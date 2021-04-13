@@ -4,6 +4,9 @@ declare module 'props' {
   export interface RegisterScreenProps {}
   export interface LoginScreenProps {}
   export interface HomeScreenProps {}
+  export interface EcommerceScreenProps {}
+
+  export interface NavbarComponentProps {}
   export interface WrapperComponentProps {}
   export interface CardComponentProps
     extends React.HTMLAttributes<HTMLDivElement> {
@@ -19,5 +22,9 @@ declare module 'props' {
   export interface InputComponentProps
     extends React.InputHTMLAttributes<HTMLInputElement> {
     title?: string
+  }
+  export interface ToggleComponentProps extends {} {
+    onChange: () => any
+    checked: boolean
   }
 }

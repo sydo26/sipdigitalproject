@@ -36,12 +36,10 @@ const WRAPPER = styled.div`
   align-items: center;
   width: 100%;
   height: auto;
-  border-radius: 10px;
   overflow: hidden;
   margin: 6px 0;
   padding: 18px 32px;
-  border-weight: 0.5px;
-  border-style: solid;
+  border-bottom: 0.5px solid transparent;
 `
 
 export { INPUT, DIV, LABEL, WRAPPER }

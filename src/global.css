@@ -45,3 +45,17 @@ input {
   width: 100%;
   height: auto;
 }
+
+input[type='checkbox'].toggleInput {
+  width: 40px;
+  height: 16px;
+  background: #455978;
+  position: relative;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}

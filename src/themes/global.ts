@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
-
   body {
     background-color: ${({ theme }) => theme.background.primary};
     font-family: ${({ theme }) => theme.font};
@@ -29,17 +23,18 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   button.primary.outline {
+    color: ${({ theme }) => theme.text} !important;
     background-color: transparent !important;
     border-color: ${({ theme }) => theme.button.primary};
   }
 
   button.secondary.outline {
+    color: ${({ theme }) => theme.text} !important;
     background-color: transparent !important;
     border-color: ${({ theme }) => theme.button.secondary};
   }
 
   .input {
-    border-color: ${({ theme }) => theme.input.border};
     color: ${({ theme }) => theme.text};
   }
 `

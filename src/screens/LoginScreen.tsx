@@ -12,16 +12,16 @@ const LoginScreen: React.FC<LoginScreenProps> = () => {
   return (
     <Wrapper>
       <Card style={{ marginTop: 40 }} title="Logue-se agora">
-        <div>
+        <div style={{ width: '100%' }}>
           <Input placeholder="Usuário ou E-mail" title="Usuário/E-mail" />
           <Input placeholder="Senha" type="password" title="Senha" />
           <Button
-            onClick={() => history.push('/ecommerce ')}
+            onClick={() => history.push('/ecommerce')}
             text="Logue-se agora"
             fullwidth
           />
           <Button
-            onClick={() => history.push('/register ')}
+            onClick={() => history.push('/register')}
             appearance="outline"
             type="secondary"
             text="Não possuo uma conta"

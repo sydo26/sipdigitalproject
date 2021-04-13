@@ -25,7 +25,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
     <Wrapper>
       <Card style={{ marginTop: 40 }} title="Olá, Seja Bem-Vindo">
         <ReactSVG
-          style={{ paddingLeft: 120, paddingRight: 120 }}
+          style={{ paddingLeft: 100, paddingRight: 100 }}
           className="svg"
           src={
             value
@@ -34,7 +34,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
           }
         />
 
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: 40, width: '100%' }}>
           <Button
             onClick={() => history.push('/login')}
             text="Logue-se agora"

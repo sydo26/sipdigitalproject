@@ -9,9 +9,11 @@ import { ThemeProvider } from 'styled-components'
 import MainRouter from './routes/main'
 import { GlobalStyles } from './themes/global'
 import WebFont from 'webfontloader'
+import Navbar from './components/Navbar'
+import Toggle from './components/Toggle'
 
 function App() {
-  const { value } = useDarkMode(false)
+  const { value, toggle } = useDarkMode(false)
   const [loading, setLoading] = React.useState(true)
 
   React.useEffect(() => {
@@ -30,7 +32,12 @@ function App() {
   return (
     <ThemeProvider theme={value ? darkSchema : lightSchema}>
       <GlobalStyles />
-      {!loading && <MainRouter />}
+      <>
+        <Navbar>
+          <Toggle checked={value} onChange={toggle} />
+        </Navbar>
+        {!loading && <MainRouter />}
+      </>
     </ThemeProvider>
   )
 }

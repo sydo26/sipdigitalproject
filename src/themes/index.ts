@@ -33,7 +33,7 @@ export const darkSchema: Theme = {
 export const lightSchema: Theme = {
   background: {
     primary: '#FFFFFF',
-    secondary: '#F2F2F2',
+    secondary: '#FBFBFB',
   },
   button: {
     primary: '#DC6842',

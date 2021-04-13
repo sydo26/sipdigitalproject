@@ -12,7 +12,7 @@ const RegisterScreen: React.FC<RegisterScreenProps> = () => {
   return (
     <Wrapper>
       <Card style={{ marginTop: 40 }} title="Registre-se agora">
-        <div>
+        <div style={{ width: '100%' }}>
           <Input placeholder="ex: sydo26" title="Usuário" />
           <Input placeholder="ex: example@gmail.com" title="E-mail" />
           <Input placeholder="ex: example@gmail.com" title="Confirmar e-mail" />
@@ -23,12 +23,12 @@ const RegisterScreen: React.FC<RegisterScreenProps> = () => {
             title="Confirmar senha"
           />
           <Button
-            onClick={() => history.push('/login ')}
+            onClick={() => history.push('/login')}
             text="Cadastrar agora"
             fullwidth
           />
           <Button
-            onClick={() => history.push('/login ')}
+            onClick={() => history.push('/login')}
             appearance="outline"
             type="secondary"
             text="Já possuo uma conta"
